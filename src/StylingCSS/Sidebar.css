@@ -1,0 +1,97 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed; /* Ensure it stays fixed on the left side */
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 65px;
+    background-color: #fff;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: width 0.3s ease;
+    border-right: 2px solid #0003;
+    z-index: 500; /* Stay above other content */
+    overflow-y: auto; /* Enable scrolling */
+  }
+  
+  /* Expanded sidebar */
+  .sidebar.expanded {
+    width: 270px;
+    overflow-y: auto; /* Enable vertical scrolling when expanded */
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    cursor: pointer;
+    padding: 1.7rem 0;   
+    border-bottom: 2px solid #0003;
+  }
+  
+  /* Sidebar menu */
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    list-style: none;
+    padding: 0 1rem;
+  }
+  
+  .sidebar.expanded .sidebar-menu {
+    display: flex;
+    justify-content: left !important;
+    align-items: start !important;
+    padding: 0 1rem;
+  }
+
+  .sidebar.expanded .hamburger {
+    display: flex; 
+    justify-content: right;
+  }
+
+  .sidebar-menu li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .sidebar.expanded .sidebar-menu li {
+    margin: 20px 0 !important;
+  }
+  
+  /* Icon styling */
+  .sidebar-menu .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Text in the expanded state */
+  .sidebar-menu span {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: black;
+  }
+  
+  /* Show the text when expanded */
+  .sidebar.expanded .sidebar-menu span {
+    opacity: 1;
+  }
+  
+  /* Ensure the main content stays in place */
+  .main-content {
+    margin-left: 60px; /* Adjust this to match the collapsed sidebar width */
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebar.expanded + .main-content {
+    margin-left: 60px; /* Keep main content unaffected by the sidebar expansion */
+  }
+  
