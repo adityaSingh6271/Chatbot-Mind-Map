@@ -23,27 +23,27 @@ const Sidebar = () => {
             </div>
 
             <ul className="sidebar-menu">
-                <a href="/"><li className='cursor-pointer'>
+                <a href="/#"><li className='cursor-pointer'>
                     {<PiChatCenteredTextFill className="icon icon-1" />}
                     {isExpanded && <span>Explore Chats</span>}
                 </li></a>
 
-                <a href="/"><li className='cursor-pointer'>
+                <a href="/#"><li className='cursor-pointer'>
                     <MdContactPhone className="icon icon-2" />
                     {isExpanded && <span>Business Leads</span>}
                 </li></a>
 
-                <a href="/"><li className='cursor-pointer'>
+                <a href="/#"><li className='cursor-pointer'>
                     <LiaSitemapSolid className="icon icon-3" />
                     {isExpanded && <span>View Mind Map</span>}
                 </li></a>
 
-                <a href="/"><li className='cursor-pointer'>
+                <a href="/#"><li className='cursor-pointer'>
                     <RiTeamFill className="icon icon-4"/>
                     {isExpanded && <span>Manage Teams</span>}
                 </li></a>
 
-                <a href="/"><li className='cursor-pointer'>
+                <a href="/#"><li className='cursor-pointer'>
                     <FaCog className="icon icon-5" />
                     {isExpanded && <span>Configure Chatbot</span>}
                 </li></a>

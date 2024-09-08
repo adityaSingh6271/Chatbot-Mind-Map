@@ -130,7 +130,7 @@ const DataTable = () => {
                     <div className='flex items-center justify-between w-[60%]'>
                         <div className='w-[25%] text-center'>Source</div>
                         <div className='w-[25%] text-center'>Type</div>
-                        <div className='w-[25%] text-center'>Created At</div>
+                        <div className='w-[25%] text-center max-md:w-[29%]'>Created At</div>
                         <div className='w-[25%] text-center'>Actions</div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ const DataTable = () => {
                             <div className='flex items-center justify-between w-[60%]'>
                                 <div className='w-[25%] text-center text-[1rem]'>{item.source}</div>
                                 <div className='w-[25%] text-center text-[1rem] border-[1px] border-[#2872fa] rounded-3xl'>{item.type}</div>
-                                <div className='w-[25%] text-center text-[1rem]'>{item.created_at}</div>
+                                <div className='w-[25%] text-center text-[1rem] max-md:w-[29%]'>{item.created_at}</div>
                                 <div className='w-[25%] text-center text-[1rem]'>{!item.actions ? <span className='flex items-center justify-center gap-2 cursor-pointer'><MdEdit size={25} color='#2872fa' onClick={() => setShowEditModal(!showEditModal)}/><MdDelete size={25} color='#fa2871' onClick={() => setShowDeleteModal(!showDeleteModal)} /></span> : 'N/A'}</div>
                             </div>
                         </div>

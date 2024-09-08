@@ -42,7 +42,7 @@ const AddData = () => {
       </div>
 
       {/**horizontal divider */}
-      <div className='w-[70%] h-[2px] bg-slate-500 mx-auto mt-3 flex max-md:text-center'></div>
+      <div className='max-md:w-[70%] w-[70%] h-[2px] bg-slate-500 mx-auto mt-3 flex'></div>
 
       <form action="" className='flex flex-row gap-2 justify-center items-center mt-3 max-md:ml-[64px] max-md:justify-center'>
         <div className=''>

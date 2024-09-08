@@ -136,7 +136,7 @@ const GuidedTour = () => {
                     fontSize: '14px',
                 },
                 spotlight: {
-                    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                    backgroundColor: 'none',
                 },
             }}
             locale={{
