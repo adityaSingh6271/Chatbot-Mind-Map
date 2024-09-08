@@ -5,8 +5,6 @@ import { TourContext } from '../context/TourProvider';
 const GuidedTour = () => {
     const { runTour, stepIndex, resetTour, goToStep } = useContext(TourContext);
 
-    const totalSteps = 5; // Update to match the number of steps
-
     const steps = [
         {
             target: 'body', // Use a dummy target if you don't want to highlight anything specific
