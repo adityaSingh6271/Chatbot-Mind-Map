@@ -31,7 +31,7 @@ const AddData = () => {
 
   return (
     <>
-      <div className='flex flex-row gap-2 justify-center items-center mt-3'>
+      <div className='flex flex-row gap-2 justify-center items-center mt-3 max-md:w-full max-md:ml-[64px]'>
 
         <button className='flex justify-center items-center px-3 py-1.5 gap-2 text-[1rem] font-[500] bg-[#2872fa] text-white rounded-md shadow-md shadow-slate-400 hover:bg-[#4728fa]' onClick={() => setShowAddDataModal(!showAddDataModal)}><IoAddSharp size={25} /><p>ADD DATA</p></button>
 
@@ -42,9 +42,9 @@ const AddData = () => {
       </div>
 
       {/**horizontal divider */}
-      <div className='w-[70%] h-[2px] bg-slate-500 mx-auto mt-3'></div>
+      <div className='w-[70%] h-[2px] bg-slate-500 mx-auto mt-3 flex max-md:text-center'></div>
 
-      <form action="" className='flex flex-row gap-2 justify-center items-center mt-3'>
+      <form action="" className='flex flex-row gap-2 justify-center items-center mt-3 max-md:ml-[64px] max-md:justify-center'>
         <div className=''>
           <input className='text-[1.125rem] border-[1px] border-gray-400 px-3 py-1.5 rounded-md hover:border-black focus:outline-[#2872fa]' type="text" placeholder="Search" name="name" id="name" />
           <label htmlFor="name"></label>

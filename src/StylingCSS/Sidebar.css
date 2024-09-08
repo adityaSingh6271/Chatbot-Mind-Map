@@ -15,6 +15,12 @@
     z-index: 500; /* Stay above other content */
     overflow-y: auto; /* Enable scrolling */
   }
+
+  @media screen and (max-width: 768px) {
+    .sidebar{
+      height: 100%;
+    }
+  }
   
   /* Expanded sidebar */
   .sidebar.expanded {

@@ -122,7 +122,7 @@ const DataTable = () => {
     };
 
     return (
-        <div className='w-[calc(99%-64px)] ml-[70px] flex flex-col overflow-y-hidden'>
+        <div className='w-[calc(100%-64px)] ml-[70px] flex flex-col overflow-y-hidden max-md:w-full max-md:ml-[75px]'>
             <div className='mt-8 p-3 h-full w-full border-[#0003] border-[1px] rounded-[8px]'>
                 {/* Table Header */}
                 <div className='flex justify-between gap-2 text-[1.1rem] font-[500] border-b-[1px] pb-2'>
@@ -160,7 +160,7 @@ const DataTable = () => {
                 <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-
+                    className='cursor-pointer'
                 >
                     <IoChevronBack size={25} />
                 </button>
@@ -169,7 +169,7 @@ const DataTable = () => {
                         <button
                             key={index + 1}
                             onClick={() => handlePageChange(index + 1)}
-                            className={`px-2.5 py-1 rounded-[50%] ${currentPage === index + 1 ? 'bg-[#2872fa] text-white ' : 'bg-gray-200'}`}
+                            className={`px-[13px] py-1 rounded-[50%] ${currentPage === index + 1 ? 'bg-[#2872fa] text-white ' : 'bg-gray-200'}`}
                         >
                             {index + 1}
                         </button>
@@ -178,7 +178,7 @@ const DataTable = () => {
                 <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-
+                    className='cursor-pointer'
                 >
                     <IoChevronForward size={25} />
                 </button>

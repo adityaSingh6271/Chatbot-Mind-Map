@@ -10,7 +10,7 @@ const GuidedTour = () => {
             target: 'body', // Use a dummy target if you don't want to highlight anything specific
             content: (
                 <div>
-                    <h2 className="text-center text-[1.5rem] p-3 font-[500] text-[#333]">Welcome to the Guided Tour!</h2>
+                    <h2 className="text-center text-[1.5rem] p-3 font-[500] text-[#333] max-md:">Welcome to the Guided Tour!</h2>
                     <p className='text-[1.125] font-[400] text-[#333]'>This tour will help you understand all the functionalities of BeyondChats admin dashboard. Click the 'Start Tour' button below to start the tour!</p>
                 </div>
             ),

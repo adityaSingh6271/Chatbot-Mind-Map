@@ -19,7 +19,7 @@ const TrainingStatus = ({onClose}) => {
                 </div>
             </div>
             <div className='border-t-[1px] border-[#0003] mt-3 p-2'>
-            <button className='text-[0.875rem] px-2.5 py-1.5 text-[#fa2871] font-[500] border-[1px] border-[#fa2871] rounded-sm absolute bottom-6 right-4 hover:bg-[#fceff3]' onClick={onClose}>Cancel</button>
+            <button className='text-[0.875rem] px-2.5 py-1.5 text-[#fa2871] font-[500] border-[1px] border-[#fa2871] rounded-sm absolute bottom-4 right-4 hover:bg-[#fceff3]' onClick={onClose}>Cancel</button>
             <button className='absolute top-6 right-4 text-[#757575]' onClick={onClose}><RxCross2 size={25}/></button>
             </div>
         </div>
