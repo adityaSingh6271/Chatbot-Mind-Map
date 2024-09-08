@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { IoAddSharp } from 'react-icons/io5'
 import { PiChatsFill, PiClockCounterClockwise } from 'react-icons/pi'
-import { Component } from "react";
 import Select from "react-select";
 import TrainingStatus from './TrainingStatus';
 import GroundTruths from './GroundTruths';
